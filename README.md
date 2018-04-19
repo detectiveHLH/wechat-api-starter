@@ -1,1 +1,1 @@
-# wechat-api-starter
+# wechat-api

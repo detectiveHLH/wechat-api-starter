@@ -1,0 +1,47 @@
+{
+  "name": "ggj-api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=development supervisor app",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "pm2 start bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "async": "^2.5.0",
+    "babel-core": "^6.26.0",
+    "busboy": "^0.2.14",
+    "debug": "^2.6.3",
+    "ejsexcel": "^3.4.9",
+    "fs": "0.0.1-security",
+    "koa": "^2.2.0",
+    "koa-better-body": "^3.0.4",
+    "koa-bodyparser": "^3.2.0",
+    "koa-convert": "^1.2.0",
+    "koa-cors": "0.0.16",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^2.0.1",
+    "koa-multer": "^1.0.2",
+    "koa-onerror": "^1.2.1",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^5.2.1",
+    "koa2-cors": "^2.0.3",
+    "mongoose": "^4.11.12",
+    "node-cache": "^4.1.1",
+    "nodemailer": "^4.4.0",
+    "path": "^0.12.7",
+    "pug": "^2.0.0-rc.1",
+    "puppeteer": "^0.13.0",
+    "querystring": "^0.2.0",
+    "request": "^2.82.0",
+    "sha1": "^1.1.1",
+    "supervisor": "^0.12.0",
+    "voc": "^1.0.0",
+    "xlsx": "^0.11.14"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1"
+  }
+}
