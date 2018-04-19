@@ -1,4 +1,4 @@
-const ip = '192.168.199.222';
+const ip = '你自己的IP地址';
 
 module.exports = {
     // 应用端口

@@ -14,8 +14,6 @@ const permission = require('./src/Permission');
 const Time = require('./utils/Time');
 const Utils = require('./utils/Utils');
 
-// 引入成员模块路由
-const User = require('./src/User/router');
 // 引入微信模块路由
 const Wechat = require('./src/WeChat/router');
 
@@ -52,7 +50,6 @@ app.use(async (ctx, next) => {
 app.use(permission.run);
 
 // 路由
-app.use(User.routes(), User.allowedMethods());
 app.use(Wechat.routes(), Wechat.allowedMethods());
 
 // error-handling

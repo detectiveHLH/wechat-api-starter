@@ -9,11 +9,11 @@ module.exports = {
     /**
      * 微信开发者id
      */
-    appid : process.env.NODE_ENV == 'development' ? 'wx3b96ced225ff8eb0' : '',
+    appid : process.env.NODE_ENV == 'development' ? '你自己的appid' : '正式公众号的appid',
     /**
      * 微信开发者密码
      */
-    secret : process.env.NODE_ENV == 'development' ? '9eadee0fb2c162e78496f504a89e5dea' : '',
+    secret : process.env.NODE_ENV == 'development' ? '你自己的secret' : '正式公众号的secret',
     /**
      * 获取 全局 access_token
      */
@@ -29,7 +29,7 @@ module.exports = {
     /**
      * 服务器资源验证token
      */
-    token : process.env.NODE_ENV == 'development' ? 'detectiveHLH' : '',
+    token : process.env.NODE_ENV == 'development' ? '测试号配置的Token' : '正式公众号的Token',
     /**
      * 发送模板消息连接
      */
@@ -42,12 +42,4 @@ module.exports = {
      * 微信模板ID
      */
     templateID : process.env.NODE_ENV == 'development' ? 'X1o0n5OnAaKaBF9mLyjk7F-YLFR9nz5MjzZcran57ks' : '',
-    /**
-     * 从app-api获取access_token的接口
-     */
-    get_access_token_url : process.env.NODE_ENV == 'development' ? 'http://172.20.70.21:3010/wechat/pass/get_wechat_access_token' : '',
-    /**
-     * 从app-api根据免登陆code获取用户信息的接口
-     */
-    get_user_info_url : process.env.NODE_ENV == 'development' ? 'http://172.20.70.21:3010/wechat/pass/get_signature' : '',
 };

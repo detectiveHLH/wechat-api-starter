@@ -1,6 +1,5 @@
 const fs = require('fs')
 const path = require('path')
-const getDir = require('../config/fileDir')
 
 exports.types = {
     isString : obj => (Object.prototype.toString.call(obj) === '[object String]'),

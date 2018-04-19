@@ -1,6 +1,4 @@
 const Response = require('./Response');
-const User = require('./User/controllers/User');
-const Request = require('../utils/Request');
 
 exports.run = async (ctx, next) => {
     const url = ctx.url.split('/');
@@ -15,7 +13,7 @@ exports.run = async (ctx, next) => {
         if(ctx.cookies.get('access_token'))
         {
             // 鉴权
-            const user = await User.checkUser(ctx.cookies.get('access_token'));
+            const user = null;
             if(!user)
             {
                 Response.error(ctx, 1, '请登录');
