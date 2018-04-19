@@ -87,7 +87,6 @@ exports.getSignature = async (ctx, next) => {
     access_token = null,
     openid = null;
   res = await Request.get(data, url);
-  console.log(res);
   access_token = res.access_token;
   // 根据access_token 和 openid 获取用户详细信息
   openid = res.openid;
